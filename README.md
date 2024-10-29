@@ -88,7 +88,7 @@ The spreadsheet performs integer addition, subtraction, multiplication, division
 * If the cell "A1" contains "=1+3", the result of its evaluation is 4.
 * If the cell "A1" contains "=1+3.5", the result of its evaluation is "#Error".
 * If the cell "A1" contains "=1/0", the result of its evaluation is "#Error".
-* If the cell "A1" contains "=1+3*2", the result of its evaluation is 9.
+* If the cell "A1" contains "=1+3*2", the result of its evaluation is 7.
 
 ### User Story 6 -- Formulas with Arithmetic Operators and References
 A formula can contain both arithmetic operators and references to other cells. In such a case, the evaluation is recursive, namely: the referenced cells are evaluated and the results of these evaluations are used by the formula.
