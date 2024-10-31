@@ -23,7 +23,7 @@ class SpreadSheet:
                 return value[1:-1]
             elif value.startswith("="):
                 if value[1:].isdigit():
-                    return value[1:]
+                    return int(value[1:])  # Convert to int to fix the type issue
                 elif value[1:].startswith("'") and value[-1] == "'":
                     return value[2:-1]
                 elif value[1:] in self._cells:
